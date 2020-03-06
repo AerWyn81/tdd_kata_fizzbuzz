@@ -24,7 +24,7 @@ public class FizzBuzzTest {
 
     @Test
     public void should_print_empty_if_not_a_multiple_of_3() {
-        int numberToTest = 5;
+        int numberToTest = 1;
 
         String calcResult = FizzBuzz.calculate(numberToTest);
         assertEquals("", calcResult);
@@ -44,5 +44,13 @@ public class FizzBuzzTest {
 
         String calcResult = FizzBuzz.calculate(numberToTest);
         assertEquals("buzz", calcResult);
+    }
+
+    @Test
+    public void should_print_empty_if_not_a_multiple_of_5() {
+        int numberToTest = 1;
+
+        String calcResult = FizzBuzz.calculate(numberToTest);
+        assertEquals("", calcResult);
     }
 }
