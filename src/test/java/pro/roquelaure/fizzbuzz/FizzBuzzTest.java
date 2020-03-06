@@ -21,4 +21,12 @@ public class FizzBuzzTest {
         String calcResult = FizzBuzz.calculate(numberToTest);
         assertEquals("fizzbuzz", calcResult);
     }
+
+    @Test
+    public void should_print_fizz_if_a_multiple_of_3() {
+        int numberToTest = 3;
+
+        String calcResult = FizzBuzz.calculate(numberToTest);
+        assertEquals("3", calcResult);
+    }
 }
