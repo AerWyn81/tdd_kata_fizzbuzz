@@ -23,6 +23,14 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void should_print_empty_if_not_a_multiple_of_3() {
+        int numberToTest = 5;
+
+        String calcResult = FizzBuzz.calculate(numberToTest);
+        assertEquals("", calcResult);
+    }
+
+    @Test
     public void should_print_fizz_if_a_multiple_of_3() {
         int numberToTest = 3;
 
