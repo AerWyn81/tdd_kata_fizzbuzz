@@ -6,6 +6,12 @@ public class FizzBuzz {
     }
 
     public static String calculate(int num) {
-        return num % 3 == 0 && num % 5 == 0 ? "fizzbuzz" : "";
+        if (num % 3 == 0 && num % 5 == 0) {
+            return "fizzbuzz";
+        } else if (num % 3 == 0) {
+            return "fizz";
+        } else {
+            return "";
+        }
     }
 }

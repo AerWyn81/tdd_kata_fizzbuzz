@@ -27,6 +27,6 @@ public class FizzBuzzTest {
         int numberToTest = 3;
 
         String calcResult = FizzBuzz.calculate(numberToTest);
-        assertEquals("3", calcResult);
+        assertEquals("fizz", calcResult);
     }
 }
