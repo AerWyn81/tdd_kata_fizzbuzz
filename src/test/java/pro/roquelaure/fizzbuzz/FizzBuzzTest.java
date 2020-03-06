@@ -37,4 +37,12 @@ public class FizzBuzzTest {
         String calcResult = FizzBuzz.calculate(numberToTest);
         assertEquals("fizz", calcResult);
     }
+
+    @Test
+    public void should_print_buzz_if_a_multiple_of_5() {
+        int numberToTest = 5;
+
+        String calcResult = FizzBuzz.calculate(numberToTest);
+        assertEquals("buzz", calcResult);
+    }
 }
